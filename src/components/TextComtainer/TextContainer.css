@@ -1,0 +1,15 @@
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.text-container__title {
+    font-size: 25px;
+    color: rgb(240, 233, 222);
+}
+
+.text-container__subtitle {
+    font-size: 18px;
+    color: rgb(243, 233, 221);
+}

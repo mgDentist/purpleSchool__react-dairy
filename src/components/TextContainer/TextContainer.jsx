@@ -1,7 +1,7 @@
 import './TextContainer.css'; 
 
-function TextContainer(props) {
-    const {title, date, subtitle} = props.data;
+function TextContainer({data}) {
+    const {title, date, subtitle} = data;
     const formattedDate = new Intl.DateTimeFormat('ru-RU').format(date);
 
     return (

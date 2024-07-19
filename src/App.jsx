@@ -1,8 +1,10 @@
 import './App.css';
-import Button from './components/Button/Button';
-import Card from './components/Card/Card';
+import AddTodosButton from './components/AddTodosButton/AddTodosButton';
+import CardButton from './components/CardButton/CardButton';
 import TextContainer from './components/TextContainer/TextContainer';
 import CardsContainer from './components/CardsContainer/CardsContainer';
+import TodosWrapper from './components/TodosWrapper/TodosWrapper';
+import MainTitle from './components/MainTitle/MainTitle';
 
 function App() {
 
@@ -26,15 +28,17 @@ function App() {
 
   return (
     <>
-      <div>Проект</div>
-      <CardsContainer>
-      {DATA.map((item, index) => (
-        <Card key={index}>
-          <TextContainer data={item}/>
-          <Button>OK</Button>
-        </Card>
-      ))}
-      </CardsContainer>
+      <MainTitle>Todoer.</MainTitle>
+      <TodosWrapper>
+        <CardButton>+ Добавить заметку</CardButton>
+        <CardsContainer>
+          {DATA.map((item, index) => (
+            <CardButton key={index}>
+              <TextContainer data={item} />
+            </CardButton>
+          ))}
+        </CardsContainer>
+      </TodosWrapper>
     </>
   );
 }

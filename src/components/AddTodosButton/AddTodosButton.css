@@ -1,5 +1,6 @@
-.button {
+/* .add-todos-button {
     min-width: 35px;
+    align-self: center;
     padding: 5px 10px;
     font-size: 16px;
     color: #ffffff;
@@ -11,5 +12,7 @@
     &:hover {
         background-color: #06065c;
     }
-}
+} */
 
+
+/* пока что не используется */

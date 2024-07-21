@@ -10,19 +10,22 @@ function App() {
 
   const DATA = [
     {
-      title: 'Title 1',
-      subtitle: 'Subtitle 1 Subtitle 1 Subtitle 1 Subtitle 1 Subtitle 1',
-      date: new Date()
+      title: 'Title 1 Title 1 Title 1Title 1 Title 1 Title 1 Title 1 Title 1 Title 1 Title 1 Title 1 Title 1 ',
+      subtitle: 'Subtitle 1 Subtitle 1Subtitle 1Subtitle 1Subtitle 1Subtitle 1Subtitle 1Subtitle 1 Subtitle 1 Subtitle 1 Subtitle 1 Subtitle 1',
+      date: new Date(),
+      id: 4545,
     },
     {
-      title: 'Title 2',
-      subtitle: 'Subtitle 2 Subtitle 2 Subtitle 2 Subtitle 2 Subtitle 2',
-      date: new Date()
+      title: 'Title 2 Title 2 Title 2 Title 2 Title 2 Title 2 Title 2Title 2',
+      subtitle: 'Subtitle 2 Subtitle 2 Subtitle 2 Subtitle 2 Subtitle 2 Subtitle 2Subtitle 2Subtitle 2Subtitle 2Subtitle 2Subtitle 2',
+      date: new Date(),
+      id: 454645,
     },
     {
-      title: 'Title 3',
-      subtitle: 'Subtitle 3 Subtitle 3 Subtitle 3 Subtitle 3 Subtitle 3',
-      date: new Date()
+      title: 'Title 3 Title 3 Title 3 Title 3 Title 3',
+      subtitle: 'Subtitle 3 Subtitle 3 Subtitle 3 Subtitle 3 Subtitle 3 Subtitle 3Subtitle 3Subtitle 3Subtitle 3Subtitle 3Subtitle 3Subtitle 3Subtitle 3Subtitle 3Subtitle 3Subtitle 3',
+      date: new Date(),
+      id: 459075,
     }
   ];
 
@@ -32,9 +35,10 @@ function App() {
       <TodosWrapper>
         <CardButton className='card-button__add'>+ Добавить заметку</CardButton>
         <CardsContainer>
-          {DATA.map((item, index) => (
-            <CardButton key={index}>
-              <TextContainer data={item} />
+          {DATA.map((item) => (
+            <CardButton key={item.id}>
+            {console.log(item)}
+              <TextContainer data={item}/>
             </CardButton>
           ))}
         </CardsContainer>

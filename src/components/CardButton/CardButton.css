@@ -1,12 +1,15 @@
 .card-button {
-    /* min-width: 300px;
-    min-height: 150px; */
+    width: 500px;
+    height: 150px;
     padding: 15px 20px;
     background-color: #222222;
     border: 1px solid #ffffff;
     border-radius: 5px;
+    text-align: start;
 }
 
 .card-button__add {
-    align-self: center;
+    width: auto;
+    height: auto;
+    align-self: start;
 }
